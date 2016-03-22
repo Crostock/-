@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		140DD0E1F158C9D13CE81976 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0972A6D9D3DF6A7A2FFAD0 /* libPods.a */; };
+		EA15D8D21CA12F87000D640B /* CACoordLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA15D8CB1CA12F87000D640B /* CACoordLayer.m */; };
+		EA15D8D31CA12F87000D640B /* MovingAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA15D8CD1CA12F87000D640B /* MovingAnnotationView.m */; };
+		EA15D8D41CA12F87000D640B /* TracingPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = EA15D8CF1CA12F87000D640B /* TracingPoint.m */; };
+		EA15D8D51CA12F87000D640B /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = EA15D8D11CA12F87000D640B /* Util.m */; };
+		EA15D8DA1CA13018000D640B /* userPosition@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA15D8D91CA13018000D640B /* userPosition@2x.png */; };
+		EA15D8DC1CA13692000D640B /* tracking.json in Resources */ = {isa = PBXBuildFile; fileRef = EA15D8DB1CA13692000D640B /* tracking.json */; };
 		EAAA89281C9F90F9003D8EAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA89271C9F90F9003D8EAF /* main.m */; };
 		EAAA892B1C9F90F9003D8EAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA892A1C9F90F9003D8EAF /* AppDelegate.m */; };
 		EAAA892E1C9F90F9003D8EAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA892D1C9F90F9003D8EAF /* ViewController.m */; };
@@ -38,6 +44,16 @@
 /* Begin PBXFileReference section */
 		3F0F5E74A810BD560785E90B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CD0972A6D9D3DF6A7A2FFAD0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA15D8CA1CA12F87000D640B /* CACoordLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACoordLayer.h; sourceTree = "<group>"; };
+		EA15D8CB1CA12F87000D640B /* CACoordLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACoordLayer.m; sourceTree = "<group>"; };
+		EA15D8CC1CA12F87000D640B /* MovingAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingAnnotationView.h; sourceTree = "<group>"; };
+		EA15D8CD1CA12F87000D640B /* MovingAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingAnnotationView.m; sourceTree = "<group>"; };
+		EA15D8CE1CA12F87000D640B /* TracingPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracingPoint.h; sourceTree = "<group>"; };
+		EA15D8CF1CA12F87000D640B /* TracingPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracingPoint.m; sourceTree = "<group>"; };
+		EA15D8D01CA12F87000D640B /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		EA15D8D11CA12F87000D640B /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		EA15D8D91CA13018000D640B /* userPosition@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "userPosition@2x.png"; sourceTree = "<group>"; };
+		EA15D8DB1CA13692000D640B /* tracking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tracking.json; sourceTree = "<group>"; };
 		EAAA89231C9F90F9003D8EAF /* 运动轨迹.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "运动轨迹.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAAA89271C9F90F9003D8EAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAAA89291C9F90F9003D8EAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +116,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EA15D8C91CA12F7E000D640B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				EA15D8D91CA13018000D640B /* userPosition@2x.png */,
+				EA15D8CA1CA12F87000D640B /* CACoordLayer.h */,
+				EA15D8CB1CA12F87000D640B /* CACoordLayer.m */,
+				EA15D8CC1CA12F87000D640B /* MovingAnnotationView.h */,
+				EA15D8CD1CA12F87000D640B /* MovingAnnotationView.m */,
+				EA15D8CE1CA12F87000D640B /* TracingPoint.h */,
+				EA15D8CF1CA12F87000D640B /* TracingPoint.m */,
+				EA15D8D01CA12F87000D640B /* Util.h */,
+				EA15D8D11CA12F87000D640B /* Util.m */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		EAAA891A1C9F90F9003D8EAF = {
 			isa = PBXGroup;
 			children = (
@@ -125,10 +157,12 @@
 		EAAA89251C9F90F9003D8EAF /* 运动轨迹 */ = {
 			isa = PBXGroup;
 			children = (
+				EA15D8C91CA12F7E000D640B /* New Group */,
 				EAAA89291C9F90F9003D8EAF /* AppDelegate.h */,
 				EAAA892A1C9F90F9003D8EAF /* AppDelegate.m */,
 				EAAA892C1C9F90F9003D8EAF /* ViewController.h */,
 				EAAA892D1C9F90F9003D8EAF /* ViewController.m */,
+				EA15D8DB1CA13692000D640B /* tracking.json */,
 				EAAA892F1C9F90F9003D8EAF /* Main.storyboard */,
 				EAAA89321C9F90F9003D8EAF /* Assets.xcassets */,
 				EAAA89341C9F90F9003D8EAF /* LaunchScreen.storyboard */,
@@ -270,9 +304,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA15D8DA1CA13018000D640B /* userPosition@2x.png in Resources */,
 				EAAA89361C9F90F9003D8EAF /* LaunchScreen.storyboard in Resources */,
 				EAAA89331C9F90F9003D8EAF /* Assets.xcassets in Resources */,
 				EAAA89311C9F90F9003D8EAF /* Main.storyboard in Resources */,
+				EA15D8DC1CA13692000D640B /* tracking.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,8 +382,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAAA892E1C9F90F9003D8EAF /* ViewController.m in Sources */,
+				EA15D8D21CA12F87000D640B /* CACoordLayer.m in Sources */,
 				EAAA892B1C9F90F9003D8EAF /* AppDelegate.m in Sources */,
+				EA15D8D31CA12F87000D640B /* MovingAnnotationView.m in Sources */,
 				EAAA89281C9F90F9003D8EAF /* main.m in Sources */,
+				EA15D8D51CA12F87000D640B /* Util.m in Sources */,
+				EA15D8D41CA12F87000D640B /* TracingPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +529,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "运动轨迹/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fhjwchina.starspot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
