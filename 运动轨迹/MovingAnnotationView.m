@@ -53,7 +53,6 @@
     NSMutableArray * xvalues = [NSMutableArray arrayWithCapacity:num];
     NSMutableArray *yvalues = [NSMutableArray arrayWithCapacity:num];
     NSMutableArray *rvalues = [NSMutableArray arrayWithCapacity:num];
-    
     NSMutableArray * times = [NSMutableArray arrayWithCapacity:num];
     NSMutableArray * rtimes = [NSMutableArray arrayWithCapacity:num];
     

@@ -37,31 +37,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+          [[MAMapServices sharedServices]setApiKey:@"0ad3f46403833893450e6dd8de51e457"];
+        NSData *jsdata     = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"tracking" ofType:@"json"]];
+        NSArray *dataArray = [NSJSONSerialization JSONObjectWithData:jsdata options:NSJSONReadingAllowFragments error:nil];
+        TrackingPointsArr  = dataArray ;
 
-    @autoreleasepool {
-        NSData *jsdata = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"tracking" ofType:@"json"]];
-        
-        //   NSMutableArray * indexes = [NSMutableArray array];
-        if (jsdata)
-        {
-            NSArray *dataArray = [NSJSONSerialization JSONObjectWithData:jsdata options:NSJSONReadingAllowFragments error:nil];
-            TrackingPointsArr = dataArray ;
-        }
-        
-        [[MAMapServices sharedServices]setApiKey:@"0ad3f46403833893450e6dd8de51e457"];
-        
-        
-        [self.view addSubview:self.map];
-    }
     
-   
+    [self.view addSubview:self.map];
     [self initBtn];
     [self initAnnotation];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
@@ -114,6 +98,9 @@
 
 #pragma mark - Action
 
+
+
+//核心代码处，动画的开始
 - (void)mov
 {
     /* Step 3. */
