@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <MAMapKit/MAMapKit.h>  //高德
+#import <MapKit/MapKit.h>     //自带
 
 @interface ViewController ()
 
@@ -16,7 +18,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [[MAMapServices sharedServices]setApiKey:@"0ad3f46403833893450e6dd8de51e457"];
+    
+
+    
+    MKMapView *map2 = [[MKMapView alloc]initWithFrame:self.view.bounds];
+    
+    
+    [self.view addSubview:map2];
 }
 
 - (void)didReceiveMemoryWarning {
